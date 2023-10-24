@@ -40,13 +40,16 @@ The project can be broken down in three parts: Data Modeling, Data Engineering, 
 ![Data Types](EmployeeSQL/data/QuickDBD-export-3.jpg)
 
 ## Data Analysis
-**For the analysis, the queries in the "employees_db_queries.sql" file were made to satify the following requests:**\
+**For the analysis, the queries in the "employees_db_queries.sql" file were made to satify the following requests:**  
+
 -List the employee number, last name, first name, sex, and salary of each employee.\
-    ```
-        select e.emp_no, e.last_name, e.first_name, e.sex, s.salary\
-        from employees e\
-        left join salaries s on e.emp_no = s.emp_no;\
-    ```
+
+     select e.emp_no, e.last_name, e.first_name, e.sex, s.salary  
+     from employees e  
+     left join salaries s on e.emp_no = s.emp_no;  
+
+ 
+    
 
 -List the first name, last name, and hire date for the employees who were hired in 1986.
 -List the manager of each department along with their department number, department name, employee number, last name, and first name.
