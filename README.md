@@ -2,7 +2,7 @@
 Columbia University Week 9 Challenge
 
 
-![What is this](EmployeeSQL/data/QuickDBD-export.svg)
+![What is this](EmployeeSQL/data/QuickDBD-export.jpg)
 
 ## about
 
