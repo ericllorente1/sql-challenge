@@ -49,12 +49,12 @@ FROM employees e
 LEFT JOIN salaries s ON e.emp_no = s.emp_no;  
 ```
 -List the first name, last name, and hire date for the employees who were hired in 1986.  
-```
+``` SQL
 SELECT first_name, last_name, hire_date FROM employees  
 WHERE extract(year from hire_date) = '1986'; 
 ``` 
 -List the manager of each department along with their department number, department name, employee number, last name, and first name.  
-```
+``` SQL
 SELECT e.first_name, e.last_name, e.emp_no, d.dept_name, d.dept_no   
 FROM departments d  
 LEFT JOIN dept_manager m ON d.dept_no = m.dept_no  
@@ -62,7 +62,7 @@ LEFT JOIN employees e ON m.emp_no = e.emp_no;
 ```
  
 -List the department number for each employee along with that employee’s employee number, last name, first name, and department name.  
-```
+``` SQL
 SELECT e.last_name, e.first_name, e.emp_no, de.dept_no, d.dept_name  
 FROM employees e    
 LEFT JOIN dept_emp de ON e.emp_no = de.emp_no  
@@ -70,14 +70,14 @@ LEFT JOIN departments d ON de.dept_no = d.dept_no;
 ```  
 
 -List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.  
-```
+``` SQL
 SELECT e.first_name, e.last_name, e.sex  
 FROM employees e  
 WHERE e.first_name = 'Hercules' AND e.last_name LIKE 'B%';  
 ```
 
 -List each employee in the Sales department, including their employee number, last name, and first name.  
-```
+``` SQL
 SELECT e.last_name, e.first_name, e.emp_no, d.dept_name  
 FROM employees e  
 LEFT JOIN dept_emp de ON e.emp_no = de.emp_no  
@@ -86,7 +86,7 @@ WHERE d.dept_name = 'Sales';
 ``` 
 
 -List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.  
-```
+``` SQL
 SELECT e.last_name, e.first_name, e.emp_no, d.dept_name  
 FROM employees e  
 LEFT JOIN dept_emp de ON e.emp_no = de.emp_no  
@@ -95,7 +95,7 @@ WHERE d.dept_name = 'Sales' OR d.dept_name = 'Development';
 ``` 
  
 -List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).  
-```
+``` SQL
 SELECT e.last_name, count(last_name)  
 FROM employees e  
 GROUP BY e.last_name ORDER BY e.count DESC;  
@@ -107,4 +107,7 @@ GROUP BY e.last_name ORDER BY e.count DESC;
 -How to use Quickdbd: [How to use QuickDBD](https://www.youtube.com/watch?v=dR5lPbGLY84)\
 -How to Extract Year from Date in PostgreSQL: [Stackoverflow](https://stackoverflow.com/questions/36203613/how-to-extract-year-from-date-in-postgresql)\
 -Thank you to zaynaibg from AskBCS for helping through the year extraction from date problem\
--techTFQ on SQL Joins: [Youtube](https://www.youtube.com/watch?v=0OQJDd3QqQM)
+-techTFQ on SQL Joins: [Youtube](https://www.youtube.com/watch?v=0OQJDd3QqQM)  
+-How to add copyable code blocks: [Stackoverflow](https://stackoverflow.com/questions/31908564/easy-way-to-add-copy-to-clipboard-to-github-markdown)  
+-Highlighting code: [Github Docs](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)  
+
