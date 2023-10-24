@@ -41,9 +41,12 @@ The project can be broken down in three parts: Data Modeling, Data Engineering, 
 ## Data Analysis
 **For the analysis, the queries in the "employees_db_queries.sql" file were made to satify the following requests:**\
 -List the employee number, last name, first name, sex, and salary of each employee.\
+    ```python
     select e.emp_no, e.last_name, e.first_name, e.sex, s.salary
     from employees e
     left join salaries s on e.emp_no = s.emp_no;
+    ```
+
 -List the first name, last name, and hire date for the employees who were hired in 1986.
 -List the manager of each department along with their department number, department name, employee number, last name, and first name.
 -List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
@@ -52,7 +55,7 @@ The project can be broken down in three parts: Data Modeling, Data Engineering, 
 -List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
 -List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
 ## Acknowledgements
--
+
 -How to use Quickdbd: [How to use QuickDBD](https://www.youtube.com/watch?v=dR5lPbGLY84)\
 -How to Extract Year from Date in PostgreSQL: [Stackoverflow](https://stackoverflow.com/questions/36203613/how-to-extract-year-from-date-in-postgresql)\
 -Thank you to zaynaibg from AskBCS for helping through the year extraction from date problem\
