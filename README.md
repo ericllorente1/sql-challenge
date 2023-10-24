@@ -10,11 +10,12 @@ The premises around this project was to design tables to hold data from CSV file
 The project can be broken down in three parts: Data Modeling, Data Engineering, and Data Analysis. 
 
 ## Table of Contents
-[Installation](#installation)\
-[Data Modeling](#data-modeling)\
-[Data Engineering](#data-engineering)\ 
-[Data Analysis](#data-analysis)\
-[Acknowledgements](#acknowledgements)\
+[Installation](#installation)  
+[Data Modeling](#data-modeling)  
+[Data Engineering](#data-engineering)  
+[Data Analysis](#data-analysis)  
+[Acknowledgements](#acknowledgements)  
+
 
 
 ## Installation 
