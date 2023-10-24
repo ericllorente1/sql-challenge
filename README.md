@@ -10,23 +10,23 @@ The premises around this project was to design tables to hold data from CSV file
 The project can be broken down in three parts: Data Modeling, Data Engineering, and Data Analysis. 
 
 ## Table of Contents
-[Installation](#installation)
-[Data Modeling](#data-modeling)
-[Data Engineering](#data-engineering)
-[Data Analysis](#data-analysis)
-[Acknowledgements](#acknowledgements)
+[Installation](#installation) \
+[Data Modeling](#data-modeling) \
+[Data Engineering](#data-engineering) \ 
+[Data Analysis](#data-analysis) \
+[Acknowledgements](#acknowledgements) \
 
 
 ## Installation 
-1. Clone repository on your local machine
-2. Open PgAdmin 4
-3. Create a New Database
-4. Open Query Tool
-5. Import 'employee_db_schema.sql' file from 'EmployeeSQL' folder
-6. Import Data from CSV files into tables (located in Data folder)
-7. Create a simple query to make sure database is setup appropiately
-8. Import 'employee_db_queries.sql' file from 'EmployeeSQL' folder
-9. Highlight and run queries one by one
+    1. Clone repository on your local machine
+    2. Open PgAdmin 4
+    3. Create a New Database
+    4. Open Query Tool
+    5. Import 'employee_db_schema.sql' file from 'EmployeeSQL' folder
+    6. Import Data from CSV files into tables (located in Data folder)
+    7. Create a simple query to make sure database is setup appropiately
+    8. Import 'employee_db_queries.sql' file from 'EmployeeSQL' folder
+    9. Highlight and run queries one by one
 
 
 ## Data Modeling
