@@ -43,12 +43,10 @@ The project can be broken down in three parts: Data Modeling, Data Engineering, 
 **For the analysis, the queries in the "employees_db_queries.sql" file were made to satify the following requests:**  
 
 -List the employee number, last name, first name, sex, and salary of each employee.  
-```       
-function test() {
-  console.log("SELECT e.emp_no, e.last_name, e.first_name, e.sex, s.salary n\
-  FROM employees e n\
-  LEFT JOIN salaries s ON e.emp_no = s.emp_no;");
-}
+```
+SELECT e.emp_no, e.last_name, e.first_name, e.sex, s.salary  
+FROM employees e  
+LEFT JOIN salaries s ON e.emp_no = s.emp_no;  
 ```
 -List the first name, last name, and hire date for the employees who were hired in 1986.  
     SELECT first_name, last_name, hire_date FROM employees  
