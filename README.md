@@ -5,7 +5,7 @@ Columbia University Week 9 Challenge
 
 
 ## About 
-The premises around this project was to design tables to hold data from CSV files, import the data that the CSV files contained into a SQL database, and use the database to query and answer the questions given to analyze the data.\
+The premises around this project was to design tables to hold data from CSV files, import the data that the CSV files contained into a SQL database, and use the database to query and answer the questions given to analyze the data.
 
 The project can be broken down in three parts: Data Modeling, Data Engineering, and Data Analysis. 
 
@@ -41,10 +41,10 @@ The project can be broken down in three parts: Data Modeling, Data Engineering, 
 ## Data Analysis
 **For the analysis, the queries in the "employees_db_queries.sql" file were made to satify the following requests:**\
 -List the employee number, last name, first name, sex, and salary of each employee.\
-    ```python
-    select e.emp_no, e.last_name, e.first_name, e.sex, s.salary
-    from employees e
-    left join salaries s on e.emp_no = s.emp_no;
+    ```
+        select e.emp_no, e.last_name, e.first_name, e.sex, s.salary\
+        from employees e\
+        left join salaries s on e.emp_no = s.emp_no;\
     ```
 
 -List the first name, last name, and hire date for the employees who were hired in 1986.
